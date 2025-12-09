@@ -1,0 +1,12 @@
+.emptyCard__7e549::before {
+    content: 
+   "  ╱|、   \a"
+ "(˚ˎ 。7  \a"
+  "  |、˜〵\  \a"
+"    じしˍ,)ノ";
+  white-space: pre;
+  inset: 0;
+  padding: 0 20px 0;
+  color: var(--text-default);
+  text-align: center;
+  font-size: 125%;
