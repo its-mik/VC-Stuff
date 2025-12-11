@@ -73,6 +73,7 @@
   order: var(--order-spotify-player);
   position: relative;
   overflow: hidden;
+  background: var(--bg-color);
 
   .barFill_a562c8 {
     background-color: var(--vc-spotify-green) !important;
