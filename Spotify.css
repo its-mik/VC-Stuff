@@ -1,5 +1,5 @@
 :root {
-  --bg-color: var(--background-gradient-high, var(--background-base-lowest));
+  --bg-color: black;
 
   --panel-radius: 10px;
 
@@ -16,7 +16,6 @@
 .panels__5e434 {
   display: flex;
   flex-direction: column;
-  gap: var(--panel-gap);
   background: var(--bg-color);
   border: 1px solid var(--border-subtle);
   border-radius: var(--panel-radius);
@@ -31,13 +30,6 @@
 .wrapper__0d616,
 .wrapperVisible__0d616 {
   border-radius: var(--panel-radius);
-}
-
-.listeningAlong_e0cf27,
-.panel__5dec7,
-.container_e131a9,
-.container__37e49 {
-  background-color: var(--panel-color);
 }
 
 .listeningAlong_e0cf27 {
@@ -104,6 +96,10 @@
   }
 }
 
+#vc-spotify-titles {
+  color: var(--vc-spotify-green);
+}
+
 #vc-spotify-info-wrapper {
   display: flex;
   flex-direction: row;
@@ -128,4 +124,14 @@
 
 .vc-spotify-progress-time {
   font-size: 11px;
+}
+
+.postEnrollmentBackground__24e2c {
+  background-image: none !important;
+  background-color: var(--bg-color);
+}
+.wrapper_c4293b {
+    box-sizing: border-box;
+    height: 148px;
+    border-bottom: 1px solid #242426;
 }
