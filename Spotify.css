@@ -96,7 +96,7 @@
   }
 }
 
-#vc-spotify-titles {
+#vc-spotify-song-title {
   color: var(--vc-spotify-green);
 }
 
@@ -109,6 +109,10 @@
 
 #vc-spotify-album-title {
   display: none !important;
+}
+
+#vc-spotify-info-wrapper #vc-spotify-album-image {
+  pointer-events: none;
 }
 
 #vc-spotify-progress-bar {
