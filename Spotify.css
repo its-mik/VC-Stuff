@@ -13,7 +13,7 @@
   --grabber-height: 0.4;
 }
 
-.panels__5e434 {
+._5e434347c823b592-panels {
   display: flex;
   flex-direction: column;
   background: var(--bg-color);
@@ -21,39 +21,39 @@
   border-radius: var(--panel-radius);
 }
 
-.mask__0d616 {
+._0d6162a4e6a4b802-mask {
   order: var(--order-quests);
   margin-inline: 0;
   padding-inline: 0;
 }
 
-.wrapper__0d616,
-.wrapperVisible__0d616 {
+._0d6162a4e6a4b802-wrapper,
+._0d6162a4e6a4b802-wrapperVisible {
   border-radius: var(--panel-radius);
 }
 
-.listeningAlong_e0cf27 {
+.e0cf275d59896c00-listeningAlong {
   order: var(--order-listening);
 }
 
-.panel__5dec7 {
+._5dec784a68542d60-panel {
   order: var(--order-stream);
   padding: calc(var(--custom-guild-list-padding) - var(--custom-panels-spacing) + 3px);
 }
 
-.wrapper_e131a9 {
+.e131a99484292a19-wrapper {
   order: var(--order-voice);
 
-  &:not(:has(.container_e131a9)) {
+  &:not(:has(.e131a99484292a19-container)) {
     display: none;
   }
 
-  .container_e131a9 {
+  .e131a99484292a19-container {
     min-height: 90px;
   }
 }
 
-.container__37e49 {
+._37e49614b9f110a9-container {
   order: var(--order-profile);
 
   &:has(.plated_37e49) {
@@ -67,7 +67,7 @@
   overflow: hidden;
   background: var(--bg-color);
 
-  .barFill_a562c8 {
+  .a562c840daab72a7-barFill {
     background-color: var(--vc-spotify-green) !important;
   }
 
@@ -126,11 +126,11 @@
   font-size: 11px;
 }
 
-.postEnrollmentBackground__24e2c {
+._24e2c2ebe64fd7d3-postEnrollmentBackground {
   background-image: none !important;
   background-color: var(--bg-color);
 }
-.wrapper_c4293b {
+.c4293be9bb86ed7d-wrapper {
     box-sizing: border-box;
     height: 148px;
     border-bottom: 1px solid #242426;
