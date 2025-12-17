@@ -67,7 +67,7 @@
   overflow: hidden;
   background: var(--bg-color);
 
-[class*="bar"] > [class*="barFill"] {
+  [class*="bar"] > [class*="barFill"] {
     background-color: var(--vc-spotify-green) !important;
 }
 
@@ -132,7 +132,7 @@
 }
 
 [class*="wrapper"] > [class*="contentWrapper"] > [class*="wrapper"] {
-    box-sizing: border-box;
-    height: 148px;
-    border-bottom: 1px solid #242426;
+  box-sizing: border-box;
+  height: 148px;
+  border-bottom: 1px solid #242426;
 }
