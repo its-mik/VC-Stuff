@@ -13,7 +13,7 @@
   --grabber-height: 0.4;
 }
 
-._5e434347c823b592-panels {
+[class*="panels"][aria-label*="User area"] {
   display: flex;
   flex-direction: column;
   background: var(--bg-color);
@@ -21,42 +21,42 @@
   border-radius: var(--panel-radius);
 }
 
-._0d6162a4e6a4b802-mask {
+[class*="panels"][aria-label*="User area"] > [class*="mask"] {
   order: var(--order-quests);
   margin-inline: 0;
   padding-inline: 0;
 }
 
-._0d6162a4e6a4b802-wrapper,
-._0d6162a4e6a4b802-wrapperVisible {
+[class*="panels"][aria-label*="User area"] > [class*="mask"] > [class*="wrapper"],
+[class*="panels"][aria-label*="User area"] > [class*="mask"] > [class*="wrapperVisible"] {
   border-radius: var(--panel-radius);
 }
 
-.e0cf275d59896c00-listeningAlong {
+[class*="listeningAlong"] {
   order: var(--order-listening);
 }
 
-._5dec784a68542d60-panel {
+[class*="panels"][aria-label*="User area"] > [class*="panel"] {
   order: var(--order-stream);
   padding: calc(var(--custom-guild-list-padding) - var(--custom-panels-spacing) + 3px);
 }
 
-.e131a99484292a19-wrapper {
+[class*="panels"][aria-label*="User area"] > [class*="wrapper"] {
   order: var(--order-voice);
 
-  &:not(:has(.e131a99484292a19-container)) {
+  &:not(:has([class*="panels"][aria-label*="User area"] > [class*="wrapper"] > [class*="container"])) {
     display: none;
   }
 
-  .e131a99484292a19-container {
+[class*="panels"][aria-label*="User area"] > [class*="wrapper"] > [class*="container"] {
     min-height: 90px;
   }
 }
 
-._37e49614b9f110a9-container {
+[class*="panels"][aria-label*="User area"] > [class*="container"] {
   order: var(--order-profile);
 
-  &:has(.plated_37e49) {
+  &:has([class*="panels"][aria-label*="User area"] > [class*="container"] > [class*="plated"]) {
     border: none;
   }
 }
@@ -67,7 +67,7 @@
   overflow: hidden;
   background: var(--bg-color);
 
-  .a562c840daab72a7-barFill {
+[class*="bar"] > [class*="barFill"] {
     background-color: var(--vc-spotify-green) !important;
   }
 
@@ -126,11 +126,11 @@
   font-size: 11px;
 }
 
-._24e2c2ebe64fd7d3-postEnrollmentBackground {
+[class*="postEnrollmentBackground"] {
   background-image: none !important;
   background-color: var(--bg-color);
 }
-.c4293be9bb86ed7d-wrapper {
+[class*="wrapper"] > [class*="contentWrapper"] > [class*="wrapper"] {
     box-sizing: border-box;
     height: 148px;
     border-bottom: 1px solid #242426;
