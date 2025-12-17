@@ -1,4 +1,4 @@
-._7e549558f336cddb-emptyCard::before {
+[class*="scroller"] [class*="emptyCard"]::before {
     content: 
    "  ╱|、   \a"
  "(˚ˎ 。7  \a"
@@ -10,3 +10,4 @@
   color: var(--text-default);
   text-align: center;
   font-size: 125%;
+}
