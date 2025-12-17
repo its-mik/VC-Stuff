@@ -69,7 +69,7 @@
 
 [class*="bar"] > [class*="barFill"] {
     background-color: var(--vc-spotify-green) !important;
-  }
+}
 
   .vc-spotify-repeat-context,
   .vc-spotify-repeat-track,
@@ -130,6 +130,7 @@
   background-image: none !important;
   background-color: var(--bg-color);
 }
+
 [class*="wrapper"] > [class*="contentWrapper"] > [class*="wrapper"] {
     box-sizing: border-box;
     height: 148px;
