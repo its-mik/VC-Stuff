@@ -1,41 +1,41 @@
 /*Idle*/
 
-[class^=memberInner_]:has([aria-label*="Idle"]) svg path[fill="#43a25a"],
-[class^=channel_]:has([aria-label*="Idle"]) svg path[fill="#43a25a"],
-[class^=peopleListItem_]:has([aria-label*="Idle"]) svg path[fill="#43a25a"] {
-    fill: #ca9654 !important;
+[class*="memberInner"]:has(
+  > [class*="avatar"] [aria-label*="Idle"]
+) svg path[fill="#43a25a"] {
+  fill: #ca9654 !important;
 }
 
-[class^=memberInner_]:has([aria-label*="Idle"]) [class*="activityCounter_"][style*="var(--status-positive)"],
-[class^=channel_]:has([aria-label*="Idle"]) [class*="activityCounter_"][style*="var(--status-positive)"],
-[class^=peopleListItem_]:has([aria-label*="Idle"]) [class*="activityCounter_"][style*="var(--status-positive)"] {
-    color: #ca9654 !important;
+[class*="memberInner"]:has(
+  > [class*="avatar"] [aria-label*="Idle"]
+) [class*="activityCounter"][style*="var(--status-positive)"] {
+  color: #ca9654 !important;
 }
 
 /*DND*/
 
-[class^=memberInner_]:has([aria-label*="Do Not Disturb"]) svg path[fill="#43a25a"],
-[class^=channel_]:has([aria-label*="Do Not Disturb"]) svg path[fill="#43a25a"],
-[class^=peopleListItem_]:has([aria-label*="Do Not Disturb"]) svg path[fill="#43a25a"] {
-    fill: #d83A42 !important;
+[class*="memberInner"]:has(
+  > [class*="avatar"] [aria-label*="Do Not Disturb"]
+) svg path[fill="#43a25a"] {
+  fill: #d83A42 !important;
 }
 
-[class^=memberInner_]:has([aria-label*="Do Not Disturb"]) [class*="activityCounter_"][style*="var(--status-positive)"],
-[class^=channel_]:has([aria-label*="Do Not Disturb"]) [class*="activityCounter_"][style*="var(--status-positive)"],
-[class^=peopleListItem_]:has([aria-label*="Do Not Disturb"]) [class*="activityCounter_"][style*="var(--status-positive)"] {
-    color: #d83A42 !important;
+[class*="memberInner"]:has(
+  > [class*="avatar"] [aria-label*="Do Not Disturb"]
+) [class*="activityCounter"][style*="var(--status-positive)"] {
+  color: #d83A42 !important;
 }
 
 /*Streaming*/
 
-[class^=memberInner_]:has([aria-label*=Streaming]) svg path[fill="#43a25a"],
-[class^=channel_]:has([aria-label*=Streaming]) svg path[fill="#43a25a"],
-[class^=peopleListItem_]:has([aria-label*=Streaming]) svg path[fill="#43a25a"] {
-    fill: #643da7 !important;
+[class*="memberInner"]:has(
+  > [class*="avatar"] [aria-label*="Streaming"]
+) svg path[fill="#43a25a"] {
+  fill: #643da7 !important;
 }
 
-[class^=memberInner_]:has([aria-label*=Streaming]) [class*="activityCounter_"][style*="var(--status-positive)"],
-[class^=channel_]:has([aria-label*=Streaming]) [class*="activityCounter_"][style*="var(--status-positive)"],
-[class^=peopleListItem_]:has([aria-label*=Streaming]) [class*="activityCounter_"][style*="var(--status-positive)"] {
-    color: #643da7 !important;
+[class*="memberInner"]:has(
+  > [class*="avatar"] [aria-label*="Streaming"]
+) [class*="activityCounter"][style*="var(--status-positive)"] {
+  color: #643da7 !important;
 }
