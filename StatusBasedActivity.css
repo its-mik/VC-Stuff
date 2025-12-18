@@ -12,6 +12,30 @@
   color: #ca9654 !important;
 }
 
+[class*=channel]:has(
+  [class*=avatar] [aria-label*="Idle"]
+) svg path[fill="#43a25a"] {
+  fill: #ca9654 !important;
+}
+
+[class*=channel]:has(
+  [class*=avatar] [aria-label*="Idle"]
+) [class*="activityCounter"][style*="var(--status-positive)"] {
+  color: #ca9654 !important;
+}
+
+[class*=peopleListItem]:has(
+  [class*=avatar][aria-label*="Idle"]
+) svg path[fill="#43a25a"] {
+  fill: #ca9654 !important;
+}
+
+[class*=peopleListItem]:has(
+  [class*=avatar][aria-label*="Idle"]
+) [class*="activityCounter"][style*="var(--status-positive)"] {
+  color: #ca9654 !important;
+}
+
 /*DND*/
 
 [class*="memberInner"]:has(
@@ -22,6 +46,30 @@
 
 [class*="memberInner"]:has(
   > [class*="avatar"] [aria-label*="Do Not Disturb"]
+) [class*="activityCounter"][style*="var(--status-positive)"] {
+  color: #d83A42 !important;
+}
+
+[class*=channel]:has(
+  [class*=avatar] [aria-label*="Do Not Disturb"]
+) svg path[fill="#43a25a"] {
+  fill: #d83A42 !important;
+}
+
+[class*=channel]:has(
+  [class*=avatar] [aria-label*="Do Not Disturb"]
+) [class*="activityCounter"][style*="var(--status-positive)"] {
+  color: #d83A42 !important;
+}
+
+[class*=peopleListItem]:has(
+  [class*=avatar][aria-label*="Do Not Disturb"]
+) svg path[fill="#43a25a"] {
+  fill: #d83A42 !important;
+}
+
+[class*=peopleListItem]:has(
+  [class*=avatar][aria-label*="Do Not Disturb"]
 ) [class*="activityCounter"][style*="var(--status-positive)"] {
   color: #d83A42 !important;
 }
@@ -40,36 +88,6 @@
   color: #643da7 !important;
 }
 
-/*Idle*/
-
-[class*=channel]:has(
-  [class*=avatar] [aria-label*="Idle"]
-) svg path[fill="#43a25a"] {
-  fill: #ca9654 !important;
-}
-
-[class*=channel]:has(
-  [class*=avatar] [aria-label*="Idle"]
-) [class*="activityCounter"][style*="var(--status-positive)"] {
-  color: #ca9654 !important;
-}
-
-/*DND*/
-
-[class*=channel]:has(
-  [class*=avatar] [aria-label*="Do Not Disturb"]
-) svg path[fill="#43a25a"] {
-  fill: #d83A42 !important;
-}
-
-[class*=channel]:has(
-  [class*=avatar] [aria-label*="Do Not Disturb"]
-) [class*="activityCounter"][style*="var(--status-positive)"] {
-  color: #d83A42 !important;
-}
-
-/*Streaming*/
-
 [class*=channel]:has(
   [class*=avatar] [aria-label*="Streaming"]
 ) svg path[fill="#43a25a"] {
@@ -81,36 +99,6 @@
 ) [class*="activityCounter"][style*="var(--status-positive)"] {
   color: #643da7 !important;
 }
-
-/*Idle*/
-
-[class*=peopleListItem]:has(
-  [class*=avatar][aria-label*="Idle"]
-) svg path[fill="#43a25a"] {
-  fill: #ca9654 !important;
-}
-
-[class*=peopleListItem]:has(
-  [class*=avatar][aria-label*="Idle"]
-) [class*="activityCounter"][style*="var(--status-positive)"] {
-  color: #ca9654 !important;
-}
-
-/*DND*/
-
-[class*=peopleListItem]:has(
-  [class*=avatar][aria-label*="Do Not Disturb"]
-) svg path[fill="#43a25a"] {
-  fill: #d83A42 !important;
-}
-
-[class*=peopleListItem]:has(
-  [class*=avatar][aria-label*="Do Not Disturb"]
-) [class*="activityCounter"][style*="var(--status-positive)"] {
-  color: #d83A42 !important;
-}
-
-/*Streaming*/
 
 [class*=peopleListItem]:has(
   [class*=avatar][aria-label*="Streaming"]
