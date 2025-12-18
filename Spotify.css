@@ -13,7 +13,8 @@
   --grabber-height: 0.4;
 }
 
-[class*="panels"][aria-label*="User area"] {
+
+[class*="panels"][aria-label*="User area"]  {
   display: flex;
   flex-direction: column;
   background: var(--bg-color);
@@ -35,7 +36,6 @@
 [class*="listeningAlong"] {
   order: var(--order-listening);
 }
-
 [class*="panels"][aria-label*="User area"] > [class*="panel"] {
   order: var(--order-stream);
   padding: calc(var(--custom-guild-list-padding) - var(--custom-panels-spacing) + 3px);
@@ -44,11 +44,11 @@
 [class*="panels"][aria-label*="User area"] > [class*="wrapper"] {
   order: var(--order-voice);
 
-  &:not(:has([class*="panels"][aria-label*="User area"] > [class*="wrapper"] > [class*="container"])) {
+  &:not(:has[class*="container"]) {
     display: none;
   }
 
-[class*="panels"][aria-label*="User area"] > [class*="wrapper"] > [class*="container"] {
+[class*="container"] {
     min-height: 90px;
   }
 }
@@ -56,7 +56,7 @@
 [class*="panels"][aria-label*="User area"] > [class*="container"] {
   order: var(--order-profile);
 
-  &:has([class*="panels"][aria-label*="User area"] > [class*="container"] > [class*="plated"]) {
+  &:has[class*="plated"] {
     border: none;
   }
 }
@@ -69,7 +69,7 @@
 
   [class*="bar"] > [class*="barFill"] {
     background-color: var(--vc-spotify-green) !important;
-}
+  }
 
   .vc-spotify-repeat-context,
   .vc-spotify-repeat-track,
@@ -134,9 +134,8 @@
   background-image: none !important;
   background-color: var(--bg-color);
 }
-
 [class*="wrapper"] > [class*="contentWrapper"] > [class*="wrapper"] {
-  box-sizing: border-box;
-  height: 148px;
-  border-bottom: 1px solid #242426;
+    box-sizing: border-box;
+    height: 148px;
+    border-bottom: 1px solid #242426;
 }
