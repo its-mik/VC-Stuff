@@ -1,0 +1,48 @@
+[class*="riveContainer"] [class*="outerContainer"]::before,
+[class*="riveContainer"] [class*="outerContainer"]::after {
+    content: "";
+    position: fixed;
+    z-index: 999999;
+    width: 150px;
+    height: 150px;
+    background: 
+    url(https://media.discordapp.net/stickers/1299431276687917169.png)
+     center / contain no-repeat;
+    pointer-events: none;
+    animation: 
+        x-move 7.3s linear infinite alternate,
+        y-move 5.7s linear infinite alternate, 
+        color-shift 5.3s linear infinite;
+}
+[class*="riveContainer"] [class*="outerContainer"]::after {
+    animation: 
+        x-move-1 8.76s linear infinite alternate,
+        y-move-1 4.56s linear infinite alternate,
+        color-shift-1 5.3s linear infinite;
+}
+
+@keyframes x-move {
+    from { left: -10px; }
+    to { left: calc(100vw - 140px); }
+}
+
+@keyframes y-move {
+    from { top: 0; }
+    to { top: calc(100vh - 145px); }
+}
+@keyframes color-shift {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+@keyframes x-move-1 {
+    from { left: calc(100vw - 140px); }
+    to { left: -10px; }
+}
+@keyframes y-move-1 {
+    from { top: calc(100vh - 145px); }
+    to { top: 0; }
+}
+@keyframes color-shift-1 {
+    0% { filter: hue-rotate(360deg); }
+    100% { filter: hue-rotate(0deg); }
+}
