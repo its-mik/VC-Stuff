@@ -1,0 +1,37 @@
+.user-profile-sidebar > [class*="inner"] > [class*="footer"] { position: relative;}
+.user-profile-sidebar > [class*="inner"] > [class*="footer"]::before {
+    position: absolute;
+    content: "";
+
+    inset: 0;
+    padding: 0 20px;
+    bottom: 6px;
+    top: unset;
+    left: 70px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    /* Change url here*/
+    background-image: url(
+    "https://media.discordapp.net/stickers/1456119879752093819.webp?size=240&quality=lossless"
+    );
+    /* Size of the image*/
+    padding-bottom: 150px;
+    
+    /* how much space isnt the image*/
+    margin: -10px;
+    pointer-events: none;
+}
+
+[class*="panels"][aria-label*="User area"]::after{
+  margin-top: -136px;
+  position: absolute;
+  width: 228px;
+  margin-left: 160px;
+  content: url(https://media.discordapp.net/stickers/1456118728319303834.webp?size=240&quality=lossless);
+  scale: 0.3;
+  inset-inline: unset;
+  z-index: 1000;
+  pointer-events: none;
+}
